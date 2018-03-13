@@ -19,7 +19,7 @@ namespace codeTest
             //Q3. Q2코드에서 합값이 int 범위를 넘어갈 때 어떻게 처리할 것인가.
             Console.WriteLine(TreeNode.TrySum(0, int.MaxValue));
 
-            //Q3. 2^n을 다양한 방법으로 구현하라.
+            //Q4. 2^n을 다양한 방법으로 구현하라.
             Console.WriteLine((int)Math.Pow(2, 3) == RecursiveSquare(3));
             Console.WriteLine((int)Math.Pow(2, 9) == RecursiveSquare(9));
             Console.WriteLine((int)Math.Pow(2, 3) == LoopSquare(3));
