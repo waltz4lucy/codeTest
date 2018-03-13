@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace codeTest
+namespace CodeTest
 {
     public class TreeNode
     {
