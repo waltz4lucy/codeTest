@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{2205880F-1518-4A00-B06F-EB602F198945}|Default">
+  <MonoDevelop.Ide.ItemProperties.codeTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="codeTest/Program.cs">
+    <Files>
+      <File FileName="codeTest/Program.cs" Line="9" Column="13" />
+      <File FileName="codeTest/TreeNode.cs" Line="7" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,5 @@
+/Users/waltz4lucy/Documents/Dev/Unity3D/codeTest/codeTest/bin/Debug/codeTest.exe
+/Users/waltz4lucy/Documents/Dev/Unity3D/codeTest/codeTest/bin/Debug/codeTest.pdb
+/Users/waltz4lucy/Documents/Dev/Unity3D/codeTest/codeTest/obj/x86/Debug/codeTest.csproj.CoreCompileInputs.cache
+/Users/waltz4lucy/Documents/Dev/Unity3D/codeTest/codeTest/obj/x86/Debug/codeTest.exe
+/Users/waltz4lucy/Documents/Dev/Unity3D/codeTest/codeTest/obj/x86/Debug/codeTest.pdb
