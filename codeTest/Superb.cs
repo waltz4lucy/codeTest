@@ -55,14 +55,14 @@ namespace CodeTest
 
             try
             {
-				Assert.AreEqual(GetMaxAlphaNumeric("foo"), 'o');
-				Assert.AreEqual(GetMaxAlphaNumeric("bbccaa"), 'c');
-				Assert.AreEqual(GetMaxAlphaNumeric("ab2c2d"), '2');
-				Assert.AreEqual(GetMaxAlphaNumeric("abCD"), 'b');
-				Assert.AreEqual(GetMaxAlphaNumeric("#a## # #"), 'a');
-				Assert.AreEqual(GetMaxAlphaNumeric("@#*@@#*"), '\0');
-				Assert.AreEqual(GetMaxAlphaNumeric(""), '\0');
-				GetMaxAlphaNumeric(null);
+                Assert.AreEqual(GetMaxAlphaNumeric("foo"), 'o');
+                Assert.AreEqual(GetMaxAlphaNumeric("bbccaa"), 'c');
+                Assert.AreEqual(GetMaxAlphaNumeric("ab2c2d"), '2');
+                Assert.AreEqual(GetMaxAlphaNumeric("abCD"), 'b');
+                Assert.AreEqual(GetMaxAlphaNumeric("#a## # #"), 'a');
+                Assert.AreEqual(GetMaxAlphaNumeric("@#*@@#*"), '\0');
+                Assert.AreEqual(GetMaxAlphaNumeric(""), '\0');
+                GetMaxAlphaNumeric(null);
             }
             catch (ArgumentException ex)
             {
