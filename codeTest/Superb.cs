@@ -53,21 +53,28 @@ namespace CodeTest
                 따라서 기본 제공되는 System.Char.IsLetterOrDigit 등의 유틸리티 함수를 사용하지 않고 직접 비교 연산을 사용해주세요.
             */
 
-            Assert.AreEqual(GetMaxAlphaNumeric("foo"), 'o');
-            Assert.AreEqual(GetMaxAlphaNumeric("bbccaa"), 'c');
-            Assert.AreEqual(GetMaxAlphaNumeric("ab2c2d"), '2');
-            Assert.AreEqual(GetMaxAlphaNumeric("abCD"), 'b');
-            Assert.AreEqual(GetMaxAlphaNumeric("#a## # #"), 'a');
-            Assert.AreEqual(GetMaxAlphaNumeric("@#*@@#*"), '\0');
-            Assert.AreEqual(GetMaxAlphaNumeric(""), '\0');
-            Assert.AreEqual(GetMaxAlphaNumeric(null), new ArgumentNullException());
+            try
+            {
+				Assert.AreEqual(GetMaxAlphaNumeric("foo"), 'o');
+				Assert.AreEqual(GetMaxAlphaNumeric("bbccaa"), 'c');
+				Assert.AreEqual(GetMaxAlphaNumeric("ab2c2d"), '2');
+				Assert.AreEqual(GetMaxAlphaNumeric("abCD"), 'b');
+				Assert.AreEqual(GetMaxAlphaNumeric("#a## # #"), 'a');
+				Assert.AreEqual(GetMaxAlphaNumeric("@#*@@#*"), '\0');
+				Assert.AreEqual(GetMaxAlphaNumeric(""), '\0');
+				GetMaxAlphaNumeric(null);
+            }
+            catch (ArgumentException ex)
+            {
+                Assert.AreEqual("content", ex.ParamName);
+            }
         }
 
         public static char GetMaxAlphaNumeric(string content)
         {
             if (null == content)
             {
-                throw new ArgumentNullException();
+                throw new ArgumentNullException(nameof(content));
             }
 
             Dictionary<char, int> dic = new Dictionary<char, int>();
