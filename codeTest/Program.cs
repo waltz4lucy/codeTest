@@ -6,7 +6,7 @@ namespace CodeTest
     {
         public static void Main(string[] args)
         {
-            //TreeNode treeNode = new TreeNode();
+            TreeNode treeNode = new TreeNode();
             Superb superb = new Superb();
         }
     }

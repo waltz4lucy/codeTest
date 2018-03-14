@@ -40,7 +40,7 @@ namespace CodeTest
                 GetMaxAlphaNumeric(“bbccaa”) == ‘c’
                 GetMaxAlphaNumeric(“ab2c2d”) == ‘2’
                 GetMaxAlphaNumeric(“abCD”) == ‘b’
-                GetMaxAlphaNumeric(“#a## # #”) == ‘a’ 
+                GetMaxAlphaNumeric(“#a## # #”) == ‘a’
                 GetMaxAlphaNumeric(“@#*@@#*”) == ‘\0’
                 GetMaxAlphaNumeric(“”) == ‘\0’
                 GetMaxAlphaNumeric(null) == ArgumentNullException
@@ -64,7 +64,7 @@ namespace CodeTest
         }
 
         public static char GetMaxAlphaNumeric(string content)
-        {   
+        {
             if (null == content)
             {
                 throw new ArgumentNullException();
