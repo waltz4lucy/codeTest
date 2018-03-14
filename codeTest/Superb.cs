@@ -53,7 +53,6 @@ namespace CodeTest
                 따라서 기본 제공되는 System.Char.IsLetterOrDigit 등의 유틸리티 함수를 사용하지 않고 직접 비교 연산을 사용해주세요.
             */
 
-
             Assert.AreEqual(GetMaxAlphaNumeric("foo"), 'o');
             Assert.AreEqual(GetMaxAlphaNumeric("bbccaa"), 'c');
             Assert.AreEqual(GetMaxAlphaNumeric("ab2c2d"), '2');
@@ -98,7 +97,7 @@ namespace CodeTest
                 }
             }
 
-			char maxChar = char.MinValue;
+            char maxChar = char.MinValue;
             foreach (KeyValuePair<char, int> kv in dic)
             {
                 if (kv.Value == maxCnt && kv.Key > maxChar)
